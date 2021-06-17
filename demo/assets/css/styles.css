@@ -1,0 +1,151 @@
+body {
+    background-color: #262626;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header > h1 {margin: 0px;}
+
+.header {
+    color: #b30000;
+    flex: 2 0 100px;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.form {
+    flex: 2 0 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+input[type=text] {
+    height: 40px;
+    width: 50vw;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    background-color: #262626;
+    color: white;
+    font-size: 20px;
+}
+
+input[type=text]:focus {
+    outline: none !important;
+    border: 2px solid #b30000;
+}
+
+::placeholder {
+    opacity: 1;
+    font-size: 20px;
+}
+
+input[type=submit] {
+    background-color: #b30000;
+    height: 60px;
+    width: 5vw;
+    color: #ccc;
+    border: none;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    background-color: #800000;
+    cursor: pointer;
+}
+
+.results {
+    flex: 4 0 650px;
+    display: flex;
+}
+
+.pic {
+    flex: 2 0 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pic > img {
+    margin-left: 200px;
+    border-radius: 100vw;
+    animation: pic;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes pic {
+    0%   {width: 0vw; height: 0vw;}
+    50%  {width: 20vw; height: 20vw;}
+    75%  {height: 10vw;}
+    90%  {height: 5vw;}
+    100% {width: 0vw; width: 0vw;}
+}
+
+.info {
+    flex: 3 0 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    flex: 2;
+    display: flex;
+    align-items: flex-end;
+    color: #b30000
+}
+
+.name > h1 {
+    font-size: 4em;
+    margin: 0px;
+    margin-left: 20px;
+}
+
+.description {
+    flex: 1;
+    color: #ccc
+}
+
+.description > p {
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+.social {
+    flex: 2;
+    display: flex;
+}
+
+.social > a {
+    background-color: #b30000;
+    height: 80px;
+    width: 80px;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+a:hover {
+    background-color: #800000;
+}
+
+a > img {
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+.error {
+    flex: 0 0 500px;
+    justify-content: center;
+    align-items: center;
+    color: #b30000;
+    flex-direction: column;
+}

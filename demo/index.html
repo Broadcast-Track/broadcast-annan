@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Broadcast Annan</title>
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <script type="text/javascript" src="assets/js/bot.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <img src="assets/img/logo.png"/>
+            <h1>Broadcast Annan</h1>
+        </div>
+        <div class="form">
+            <form id="form" action="#">
+                <input type="text" placeholder="Enthelum okke chodikk...">
+                <input type="submit" value="Para" onclick="bot()">
+            </form>
+        </div>
+        <div id="error" style="display: none;" class="error">
+            <img src="assets/img/error.png"/>
+            <h1 id="error_text"></h1>
+        </div>
+        <div id="results" style="display: none;" class="results">
+            <div class="pic">
+                <img id="pic" src=""/>
+            </div>
+            <div class="info">
+                <div class="name">
+                    <h1 id="name"></h1>
+                </div>
+                <div class="description">
+                    <p id="description"></p>
+                </div>
+                <div class="social">
+                    <a id="insta" href="#">
+                        <img src="assets/img/instagram.png">
+                    </a>
+                    <a id="wa" href="#">
+                        <img src="assets/img/whatsapp.png">
+                    </a>
+                    <a id="email" href="#">
+                        <img src="assets/img/email.png">
+                    </a>
+                </div>
+            </div>
+            <div style="flex: 1"></div>
+        </div>
+    </body>
+</html>

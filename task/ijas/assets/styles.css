@@ -1,8 +1,54 @@
 body {
     background-color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
-h1 {
-    color: red;
-    margin-left: 800px;
+
+.top {
+    flex: 1 0 49vh;
+    display: flex;
+}
+
+.top > .left {
+    background-color: yellow;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top > .right {
+    background-color: green;
+    flex: 1;
+    display: flex;
+}
+
+.bottom {
+    flex: 1 0 49vh;
+    display: flex;
+}
+
+.bottom > .left {
+    flex: 1;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom > .right {
+    flex: 2;
+    background-color: aquamarine;
+    display: flex;
+}
+
+@media only screen and (max-width: 900px) {
+    .top {
+        flex-direction: column;
+    }
+    .bottom {
+        flex-direction: column;
+    }
 }
